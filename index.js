@@ -1,3 +1,20 @@
+/*Bài 2: Tính ngày */
+/* Mô hình 3 khối*/
+
+/*INPUT: tháng và năm */
+
+/*PROCESS
+1. Lấy được input, var month, var year
+2. Tạo biến var day để chứa giá trị ngày
+3. nếu (year % 4 == 0 && year % 100 !== 0)||year % 400 == 0 => năm nhuận => switch case 2 thì day sẽ = 29
+còn lại là năm không nhuận nên switch case 2 day sẽ = 28
+dùng switch case với các tháng còn lại 
+4. In kết quả ra màn hình
+
+*/
+
+/*OUTPUT: số ngày của tháng của năm mà người dùng đã nhập vào*/
+
 function ex2() {
   var month = +document.getElementById("month").value;
   var year = +document.getElementById("year").value;
